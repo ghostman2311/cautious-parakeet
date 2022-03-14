@@ -1,9 +1,12 @@
 import React from "react";
 import MenuItem from "../menu-item/MenuItem";
+import { withRouter } from "react-router-dom";
 
 class Directory extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    console.log(this.props);
 
     this.state = {
       sections: [
@@ -54,4 +57,4 @@ class Directory extends React.Component {
   }
 }
 
-export default Directory;
+export default withRouter(Directory);
