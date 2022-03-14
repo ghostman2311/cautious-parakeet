@@ -1,6 +1,7 @@
 import "./App.css";
 import Homepage from "./pages/homepage/Homepage";
 import { Switch, Route, useParams } from "react-router-dom";
+import Shop from "./pages/shop/Shop";
 
 const HatsPage = () => {
   const id = useParams();
@@ -17,7 +18,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/shop/:id" component={HatsPage} />
+        <Route exact path="/shop" component={Shop} />
       </Switch>
     </div>
   );
