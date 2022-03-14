@@ -3,6 +3,7 @@ import Homepage from "./pages/homepage/Homepage";
 import { Switch, Route, useParams } from "react-router-dom";
 import Shop from "./pages/shop/Shop";
 import Header from "./components/header/Header";
+import SignInAndSignUp from "./pages/signinandsignup/SignInAndSignUp";
 
 const HatsPage = () => {
   const id = useParams();
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/shop" component={Shop} />
+        <Route exact path="/signin" component={SignInAndSignUp} />
       </Switch>
     </div>
   );
